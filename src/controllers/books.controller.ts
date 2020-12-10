@@ -1,12 +1,5 @@
 import { Request, Response } from "express";
-import mongoose from "mongoose";
-// import { BooksModel } from "../models/books.model";
 const BooksModel = require("../models/books.model");
-
-mongoose.connect(`mongodb+srv://belenmlt:${process.env.MATLASPASS}@cluster0.xq5kj.mongodb.net/books?retryWrites=true&w=majority`, 
-                { useNewUrlParser: true, useUnifiedTopology: true }
-                );
-
 
 class BooksController {
     public async getBooks(req: Request, res: Response){

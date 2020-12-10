@@ -1,11 +1,5 @@
 import { Request, Response } from "express";
-import mongoose from "mongoose";
-// import { AuthorsModel } from "../models/authors.model"
 const AuthorsModel = require("../models/authors.model");
-
-
-mongoose.connect(`mongodb+srv://belenmlt:${process.env.MATLASPASS}@cluster0.xq5kj.mongodb.net/authors?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
-
 
 class AuthorsController {
 
